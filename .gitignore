@@ -1,0 +1,42 @@
+# Ignore build directories
+/build
+/node_modules
+
+# Ignore .env files
+.env
+
+# Ignore node_modules directory
+# node_modules
+
+# Ignore npm debug log files
+npm-debug.log*
+
+# Ignore yarn debug log files
+yarn-debug.log*
+yarn-error.log*
+
+# Ignore Visual Studio Code settings
+.vscode/
+
+# Ignore macOS system files
+.DS_Store
+
+# Ignore editor backup files
+*~
+*.swp
+*.swo
+
+# Ignore Jest coverage reports
+coverage/
+
+# Ignore React build output
+build/
+
+# Ignore Next.js build output
+out/
+
+# Ignore Gatsby build output
+public/
+
+# Ignore Webpack build output
+dist/

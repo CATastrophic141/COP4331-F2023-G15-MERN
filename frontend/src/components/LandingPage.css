@@ -1,0 +1,262 @@
+/* LandingPage.css */
+.landing-page {
+  position: relative;
+  height: 100vh; /* Full viewport height */
+  width: 100vw;
+  background-image: url('../../public/DayBackgroundCropped.png'); /* image is in the public directory */
+  /* background-repeat: no-repeat; */
+  background-size: cover;
+  /* -webkit-background-size: 100% 100%;
+  -moz-background-size: 100% 100%;
+  -o-background-size: 100% 100%; */
+  background-position: center;
+  display: flex;
+  align-items:flex-start;
+  justify-content: center;
+  align-content: center;
+}
+
+.PRODUCITON-BUTTON { /*REMOVE FOR FINAL PRODUCITON*/
+  font-size: smaller;
+}
+
+.content {
+  z-index: 1;
+  text-align: center;
+  margin: 2%;
+  align-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.title-box {
+  background-color: #1b1b22; /* Background color for the title box */
+  border-radius: 10px; /* Rounded box */
+  padding: 5px;
+  margin: 2% auto 0; /* Adjust the margin-top to move the title box up */
+  width: 350px; /* Adjust the width as needed */
+  height: 150px;
+  margin-top: 2.5%;
+  margin-bottom: 2.5%;
+  max-width: 400px;
+  text-align: center;
+}
+
+.title-box h1 {
+  color: #ffac30;
+  font-size: 50px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin-top: 2.5%;
+  margin-bottom: -1%;
+}
+
+.title-box h2 {
+  color: #ffac30;
+  font-size: 18px;
+  margin-top: 0.5%;
+  font-style: italic;
+}
+
+.login-register-box {
+  background-color: #1b1b22;
+  border-radius: 10px;
+  width: auto; 
+  height: auto;
+  min-width: 50vh;
+  max-width: min-content;
+  min-height: auto;
+  max-height: max-content;
+  margin-top: 3%;
+  /* margin: 3% 8% 3% 8%; /* Center horizontally and set the top margin to position it vertically */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  align-self: center;
+  justify-content: center;
+  padding: 2%;
+}
+
+.button-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 8%;
+  margin-bottom: 8%;
+  gap: 15px; /* Adjust the gap to control the spacing between buttons */
+}
+
+.forgot-button {
+  width: 150px;
+  height: min-content;
+  background-color: #b85600;
+  color: #000000;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.forgot-button:hover {
+  background-color: #ff0000;
+  color:#ffffff;
+}
+
+.login-button,
+.register-button,
+.confirm-button {
+  width: 150px;
+  background-color: #ffac30;
+  color: #000000;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.login-button,
+.back-button {
+  width: 150px;
+  background-color: #ffac30; /* Button background color */
+  color: #000000; /* Text color */
+  border: none;
+  border-radius: 5px;
+  padding: 10px 25px;
+  font-size: 16px;
+  cursor: pointer;
+  margin: 15px;
+}
+
+.login-button:hover,
+.back-button:hover {
+  background-color: #ae3700; /* Button background color on hover */
+  color:#ffffff;
+}
+
+.login-button, .register-button {
+  margin: 15px 0; /* Adjust the margin for spacing between the buttons */
+}
+
+.login-button:hover,
+.register-button:hover {
+  background-color: #ae3700; /* Button background color on hover */
+  color:#ffffff;
+}
+
+.login-button-container, .register-button-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  vertical-align: middle;
+  gap: 10px; /* Adjust the spacing between buttons */
+}
+
+.login-button-container{
+  margin-top: 2%;
+}
+
+.vertical-buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.confirm-button {
+  margin: 15px 0;
+}
+
+.confirm-button:hover {
+  background-color: #ae3700;
+}
+
+input[type="text"],
+input[type="password"] {
+  width: max-content; /* You can adjust the width to your desired size, for example, 100% means full width */
+  margin: 1%;
+  align-self: center;
+  padding: 10px; /* Add padding for spacing inside the text fields */
+}
+
+.error-label {
+  color: #ff0000; /* Error label text color */
+  margin-top: 5px; /* Adjust the top margin to bring it closer to the input label */
+  max-width: 200px;
+}
+
+.error-text {
+  font-size: small;
+  color: red; /* Set the text color for errors */
+  position: left;
+  margin-top: -5px; /* Adjust the top margin to bring it closer to the input label */
+  margin-bottom: -5px; /* Adjust the top margin to bring it closer to the input label */
+  margin-left: 6%;
+  max-width: 200px;
+  align-self: flex-start;
+  text-align: left;
+}
+
+.success-text {
+  font-size: small;
+  color: rgb(0, 200, 0); /* Set the text color for errors */
+  position: left;
+  margin-top: -5px; /* Adjust the top margin to bring it closer to the input label */
+  margin-bottom: -5px; /* Adjust the top margin to bring it closer to the input label */
+  margin-left: 6%;
+  max-width: 200px;
+  align-self: flex-start;
+  text-align: left;
+}
+
+.login-register-form {
+  display: flex;
+  align-content: center;
+  align-self: center;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 1%;
+}
+
+.input-row-group {
+  display: flex;
+  flex-direction: row;
+}
+
+.input-error-group {
+  display:block;
+}
+
+.label-input-group {
+  display: flex;
+  flex-direction: row; /* Keep the items aligned horizontally */
+  align-items: center; /* Align items vertically to the center */
+  margin: 10px 0; /* Adjust the margin to control the vertical spacing */
+}
+
+label {
+  color: white;
+  display: flex;
+  margin-top: 2%;
+  margin-right: 1%;
+}
+
+.label-input-group label {
+  width: 100px; /* Set a fixed width for labels to align them to the left */
+  text-align: left; /* Right-align the label text within its container */
+  margin-left: 5px;
+  margin-right: 0px; /* Add space between the label and input */
+}
+
+
+.prompt {
+  color: white;
+  display: flex;
+  margin-top: 2%;
+  text-align: center;
+  text-decoration: underline;
+}
+

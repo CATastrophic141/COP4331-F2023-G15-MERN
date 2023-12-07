@@ -1,0 +1,544 @@
+.main-page {
+  background-color: rgb(26, 26, 26); /* Set your desired background color */
+  background-image: none; /* Remove any background image */
+  min-height: 600px;
+  height: 120vh;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Adjust the alpha (4th parameter) for darkness */
+  z-index: 1; /* Make sure the overlay is below the popup */
+}
+
+.content {
+  display: flex;
+  justify-content: space-between; /* This separates the table/buttons and the map */
+}
+
+.main-content {
+  overflow-x: auto;
+}
+
+.table-buttons-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.title-bar {
+  text-align: center; /* To horizontally center inline-block elements */
+  color: #ffac30;
+  padding-top: 3px;
+  padding-bottom: 3px;
+}
+
+.welcome-message,
+.app-title,
+.logout-button {
+  display: inline-block;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.app-title {
+  font-size: x-large;
+}
+
+.subheader-message {
+  font-size: medium;
+  color: #efece7;
+  align-items: center;
+  align-self: center;
+  text-align: center;
+  display: flexbox;
+}
+
+.main-content {
+  display: flex; /* Use flexbox to align items horizontally */
+  justify-content: center; /* Center items horizontally */
+  align-items: flex-start; /* Align items to the top of the container vertically */
+}
+
+.left-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  width: 300px;
+}
+
+.bottom-container {
+  margin-top: auto;
+  position: relative;
+  margin-top: 10%;
+  margin-left: 25%;
+  bottom: 10%;
+  max-height: 28%;
+  max-width: 300px;
+  justify-content: center;
+  justify-self: center;
+}
+
+.button-container {
+  margin-top: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-height: fit-content;
+  max-width: fit-content;
+  z-index: 0;
+}
+
+.button-container-modal {
+  margin-top: 3%;
+  margin-bottom: 3%;
+  display: flex;
+  justify-content: left;
+  align-items: left;
+}
+
+.map-section {
+  width: 100%; /* Set an appropriate width */
+  height: 100%; /* Set an appropriate height */
+  z-index: 0;
+}
+
+.action-button {
+  background-color: #ffac30; /* Match the button background color from landing page */
+  color: #000000; /* Match the button text color from landing page */
+  border: none;
+  border-radius: 5px;
+  padding: 10px 25px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.action-button:hover {
+  background-color: #ae3700;
+  color: #ffffff;
+}
+
+.action-button-main {
+  background-color: #ffac30; /* Match the button background color from landing page */
+  color: #000000; /* Match the button text color from landing page */
+  border: none;
+  border-radius: 5px;
+  padding: 10px 25px;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.action-button-main:hover {
+  background-color: #ae3700;
+  color: #ffffff;
+}
+
+.refr-button {
+  background-color: #ffac30; /* Match the button background color from landing page */
+  color: #000000; /* Match the button text color from landing page */
+  border: none;
+  border-radius: 5px;
+  max-height: fit-content;
+  max-width: fit-content;
+  padding: 10px 25px;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.refr-button:hover {
+  background-color: #ae3700;
+  color: #ffffff;
+}
+
+.tut-button {
+  background-color: #ffac30; /* Match the button background color from landing page */
+  color: #000000; /* Match the button text color from landing page */
+  border: none;
+  border-radius: 5px;
+  max-height: fit-content;
+  max-width: fit-content;
+  padding: 10px 25px;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.tut-button:hover {
+  background-color: #ae3700;
+  color: #ffffff;
+}
+
+/* Add a style for the active Map Addition button */
+.active-map-add-button {
+  background-color: #76b5c5; /* Change this to the desired color */
+  color: #000000; /* Match the button text color from landing page */
+  border: none;
+  border-radius: 5px;
+  padding: 10px 25px;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+#go-to-entry-button {
+  background-color: #ffac30;
+  color: #000000;
+  border-radius: 0.5%;
+  padding: 0.5%;
+}
+
+#go-to-entry-button:hover {
+  background-color: #ae3700;
+  color: #ffffff;
+}
+
+.logout-button {
+  background-color: #ffac30; /* Match the button background color from landing page */
+  color: #000000; /* Match the button text color from landing page */
+  border: none;
+  border-radius: 5px;
+  padding: 2px 4px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.logout-button:hover {
+  background-color: #ae3700;
+  color: #ffffff;
+}
+
+/* Text styles matching the landing page */
+.text-element {
+  color: #ffac30; /* Match the text color from landing page */
+  font-size: 18px; /* Match the font size from landing page */
+  /* Other text styles as needed */
+}
+
+.table-container {
+  color: #ffac30;
+  max-height: 380px;
+  width: 300px;
+}
+
+.main-page-table-body {
+  width: 100%;
+  max-height: 350px;
+  display: box;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  text-wrap: wrap;
+  overflow-wrap: break-word;
+}
+
+.main-page-table-row-even {
+  color: black;
+  background-color: #cfcfcf; /* Set the color for even rows */
+  width: 100%;
+  min-height: 16px;
+  display: grid;
+  grid-template-columns: 76.66px 76.66px 76.66px 76.66px;
+}
+
+.main-page-table-row-odd {
+  color: black;
+  background-color: #efece7; /* Set the color for odd rows */
+  width: 100%;
+  min-height: 16px;
+  display: grid;
+  grid-template-columns: 76.66px 76.66px 76.66px 76.66px;
+}
+
+th, td:first-child {
+  width: 75px; /* 1st column takes up 25% of the total table width */
+  text-wrap:pretty;
+}
+
+.table-entry-name {
+  border-right: 1px solid black;
+}
+
+.table-header {
+  background-color: #ffac30; /* Set the desired color for the header */
+  color: rgb(0, 0, 0); /* Set the text color for the header */
+  width: 300px;
+  display: grid;
+  grid-template-columns: 76.66px 76.66px 76.66px 76.66px;
+  border-bottom: 1px solid black;
+}
+
+.table-header-cell {
+  padding-left: 10%;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+}
+
+.table-number{
+   /* Limit the number of decimal places to 6 */
+   max-width: 6;
+   overflow: hidden;
+   white-space: nowrap;
+   border-left: 1px solid black;
+   border-right: 1px solid black;
+   padding-left: 10%;
+}
+
+.go-to-entry-cell {
+  border-left: 1px solid black;
+  padding-left: 10%;
+}
+
+tr:nth-child(odd) {
+  color: black;
+  background-color: #efece7; /* Set the color for odd rows */
+  width: 75px;
+  max-width: 75px;
+}
+
+tr:nth-child(even) {
+  color: black;
+  background-color: #cfcfcf; /* Set the color for even rows */
+  width: 75px;
+  max-width: 75px;
+}
+
+.modal-name {
+  color:#ffac30;
+  text-align: center;
+  font-size: 18px;
+}
+
+.modal-container {
+  /* transition: all 1s ease-in; */
+  background-color:#000000;
+  flex-direction: column;
+  border-radius: 5%;
+  top: 12%;
+  left: 30%;
+  padding: 1%;
+  height: fit-content;
+  width: fit-content;
+  min-width: 50%;
+  max-width: 750px;
+  position: absolute;
+  z-index: 3;
+}
+
+/* .modal-container.hidden {
+  transition: all 1s ease-out;
+  background-color:#000000;
+  flex-direction: column;
+  border-radius: 5%;
+  top: 0%;
+  left: 30%;
+  right: 20%;
+  padding: 1%;
+  height: fit-content;
+  width: max-content;
+  max-width: 750px;
+  position: fixed;
+  z-index: 3;
+  visibility: hidden;
+} */
+
+.modal-header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-bottom: 2%;
+}
+
+.modal-content {
+  padding-left: 4px;
+  color: #ffffff;
+}
+
+.modal-body {
+  display: flex;
+  flex-direction: row;
+}
+
+.modal-entry-section{
+  align-items: left;
+  margin-left: 1%;
+  width: 40%;
+}
+
+.modal-image-section{
+  margin-left: 10%;
+  width: 60%;
+}
+
+.modal-button {
+  background-color: #ffac30; /* Match the button background color from landing page */
+  color: #000000; /* Match the button text color from landing page */
+  border: none;
+  border-radius: 5px;
+  padding: 10px 25px;
+  font-size: 12px;
+  cursor: pointer;
+  padding: 10px;
+  margin: 1%;
+  margin-top: 3%;
+}
+.modal-button:hover {
+  background-color: #ae3700; /* Match the button background color from landing page */
+}
+
+.del-modal-button {
+  background-color: #ff0000; /* Match the button background color from landing page */
+  color: #000000; /* Match the button text color from landing page */
+  border: none;
+  border-radius: 5px;
+  padding: 10px 25px;
+  font-size: 12px;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.modal-button-close {
+  background-color: #ffac30; /* Match the button background color from landing page */
+  color: #000000; /* Match the button text color from landing page */
+  border: none;
+  border-radius: 5px;
+  padding: 10px 25px;
+  font-size: 12px;
+  cursor: pointer;
+  padding: 10px;
+  margin-top: 2%;
+  margin-left: 1.3%;
+  margin-bottom: 3%;
+}
+
+.modal-button-close:hover {
+  background-color: red;  /* Use red to emphasize that you are about to close the modal. */
+}
+
+.image-input {
+  font-weight: bold;
+  color: #ffac30;
+  padding: 0.5em;
+  border-radius: 3px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center the items horizontally within the column */
+}
+
+.input-text_name{
+  margin-bottom: 5%;
+  width: 20px;
+  height: 20px; /* Set the desired height */
+  padding: 10px; /* Add padding for spacing inside the input */
+  box-sizing: border-box; /* Ensure the padding and border are included in the element's total width */
+  border: 2px solid #ccc; /* Define a border with a color of your choice */
+  border-radius: 5px; /* Add border-radius for rounded corners */
+  background-color: #f8f8f8; /* Set the background color */
+  color: #333; /* Set the text color */
+  font-size: 14px; /* Set the font size */
+  margin-bottom: 10px; /* Add margin to space out the input fields */
+}
+
+.input-text_descr {
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 2%;
+  width: 75%;
+  border: 2px solid #ccc; /* Define a border with a color of your choice */
+  border-radius: 5px; /* Add border-radius for rounded corners */
+  color: #333; /* Set the text color */
+  font-size: 12px; /* Set the font size */
+  box-sizing: border-box;
+  height: 80px; /* Set the desired height */
+  padding: 10px; /* Add padding for spacing inside the input */
+  min-width: 30px;
+  min-height: 30px;
+}
+
+.input-number {
+  margin-top: 5%;
+  width: 75%;
+  height: 20px; /* Set the desired height */
+  padding: 10px; /* Add padding for spacing inside the input */
+  box-sizing: border-box; /* Ensure the padding and border are included in the element's total width */
+  border: 2px solid #ccc; /* Define a border with a color of your choice */
+  border-radius: 5px; /* Add border-radius for rounded corners */
+  background-color: #f8f8f8; /* Set the background color */
+  color: #333; /* Set the text color */
+  font-size: 16px; /* Set the font size */
+  margin-bottom: 10px; /* Add margin to space out the input fields */
+}
+
+.error-text {
+  font-size: small;
+  color: red; /* Set the text color for errors */
+  position: left;
+  margin-top: -5px; /* Adjust the top margin to bring it closer to the input label */
+  margin-bottom: -5px; /* Adjust the top margin to bring it closer to the input label */
+  margin-left: 6%;
+  max-width: 200px;
+  align-self: flex-start;
+  text-align: left;
+}
+
+.tutorial-div.hidden {
+  transition: all 1s ease-in;
+  /* transition: background-color 1s ease-in; */
+  color: rgb(26, 26, 26);
+  background-color: rgb(26, 26, 26);
+  display: grid;
+  grid-template-columns: 100%;
+  visibility: hidden;
+  align-items: center;
+  align-content: center;
+  align-self: center;
+  text-align: left;
+  position: absolute;
+  top: 1px;
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+  border-radius: 20px;
+}
+
+.tutorial-div.visible {
+  transition: all 1s ease-out;
+  /* transition: background-color 1s ease-out; */
+  color:#efece7;
+  background-color: #ae3700;
+  font-size: medium;
+  display: grid;
+  grid-template-columns: 100%;
+  align-items: center;
+  align-content: center;
+  align-self: center;
+  text-align: left;
+  z-index: 3;
+  position: absolute;
+  top: 150px;
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+  border-radius: 20px;
+}
+
+.tutorial-div-body-text.hidden {
+  visibility: hidden;
+}
+
+.tutorial-div-body-text.visible {
+  visibility: visible;
+}
+
+.tutorial-div-header,
+.tutorial-div-subheader {
+  text-align: center;
+}
+
+.tutorial-div-paragraphs {
+  align-self: center;
+  width: 80%;
+  margin-left: 10%;
+}
